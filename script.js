@@ -1,5 +1,6 @@
 function setup() {
   const allEpisodes = getAllEpisodes();
+  console.log("Episodes loaded:", allEpisodes);
   makePageForEpisodes(allEpisodes);
 }
 
