@@ -1853,3 +1853,33 @@ function getAllEpisodes() {
     },
   ];
 }
+// Function to format episode code (e.g., S02E07)
+function formatEpisodeCode(season, episode) {
+  return `S${String(season).padStart(2, "0")}E${String(episode).padStart(2, "0")}`;
+}
+
+// Function to display episodes
+function displayEpisodes(episodes) {
+  const root = document.getElementById("root");
+  root.innerHTML = ""; // Clear existing content
+
+  episodes.forEach((episode) => {
+    const episodeCard = document.createElement("div");
+    episodeCard.classList.add("episode-card");
+
+    episodeCard.innerHTML = `
+      <h2>${episode.name} (${formatEpisodeCode(episode.season, episode.number)})</h2>
+      <img src="${episode.image?.medium || "placeholder.jpg"}" alt="${episode.name}">
+      <p>${episode.summary || "No summary available."}</p>
+      <a href="${episode.url}" target="_blank">More on TVMaze</a>
+    `;
+
+    root.appendChild(episodeCard);
+  });
+}
+
+// Load and display all episodes
+window.onload = function () {
+  const episodes = getAllEpisodes(); // Provided function
+  displayEpisodes(episodes);
+};
