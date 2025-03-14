@@ -44,5 +44,14 @@ a {
 
 footer {
   margin-top: 20px;
-  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:silver;
+    /* Dark background for contrast */
+  color: white;
+    /* Light text */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
 }
