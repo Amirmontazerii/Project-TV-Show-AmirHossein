@@ -9,10 +9,21 @@
   </head>
 
   <body>
-    <div id="root">
-    </div>
+    <header>
+      <h1>Games of Thrones episodes</h1>
+      <input type="text" id="searchBar" placeholder="Search episodes..." />
+      <select id="episodeSelector">
+        <option value="all">Show All Episodes</option>
+      </select>
+      <p id="episodeCount"></p>
+    </header>
+
+    <div id="root"></div>
     <footer>
-      <p>Data sourced from <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a></p>
+      <p>
+        Data sourced from
+        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+      </p>
     </footer>
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
