@@ -35,6 +35,24 @@ h1 {
   border-radius: 5px;
 }
 
+#searchBar {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#episodeSelector {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
 a {
   display: block;
   margin-top: 10px;
@@ -47,10 +65,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:silver;
-    /* Dark background for contrast */
+  background-color: silver;
+  /* Dark background for contrast */
   color: white;
-    /* Light text */
+  /* Light text */
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
