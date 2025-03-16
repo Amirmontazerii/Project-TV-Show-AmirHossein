@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project |AmirhosseinAminian</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Games of Thrones episodes</h1>
-      <input type="text" id="searchBar" placeholder="Search episodes..." />
-      <select id="episodeSelector">
-        <option value="all">Show All Episodes</option>
-      </select>
-      <p id="episodeCount"></p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Project | Amirhossein Aminian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
-    <div id="root"></div>
-    <footer>
-      <p>
-        Data sourced from
-        <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
-      </p>
-    </footer>
+<body>
+  <header>
+    <h1>Game of Thrones Episodes</h1>
+    <input type="text" id="searchBar" placeholder="Search episodes..." />
+    <select id="episodeSelector">
+      <option value="all">Show All Episodes</option>
+    </select>
+    <p id="episodeCount"></p>
+  </header>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+  <div id="root"></div>
 
-    <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <p>
+      Data sourced from
+      <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
