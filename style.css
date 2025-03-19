@@ -52,6 +52,7 @@ p {
 
 footer {
   margin-top: 20px;
+  position: fixed;
 
   text-align: center;
   padding: 10px;
