@@ -20,6 +20,7 @@ h1 {
   border: 3px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
+  box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.1);
 }
 
 #root {
@@ -52,10 +53,10 @@ p {
 footer {
   margin-top: 20px;
   position: fixed;
-
   text-align: center;
   padding: 10px;
-  font-size: 14px;
+  font-size: 24px;
+  background-color: white;
 }
 
 /* New styles for loading and errors */
