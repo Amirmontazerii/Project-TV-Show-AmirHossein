@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Project | Amirhossein Aminian</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
 <body>
   <header>
-    <h1>Game of Thrones Episodes</h1>
+    <h1>TV Show Episodes</h1>
+    <select id="showSelector"></select>
     <input type="text" id="searchBar" placeholder="Search episodes..." />
     <select id="episodeSelector">
       <option value="all">Show All Episodes</option>
     </select>
-    <p id="episodeCount"></p>
   </header>
 
   <div id="root"></div>
 
-  <footer>
-    <p>
-      Data sourced from
-      <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
-    </p>
-  </footer>
-
+  <!-- Loads YOUR javascript code -->
   <script src="script.js"></script>
 </body>
+
+<footer>
+  <p>
+    Data sourced from
+    <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
+  </p>
+</footer>
 
 </html>
