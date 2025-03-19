@@ -45,14 +45,6 @@ h1 {
   transform: scale(1.05);
 }
 
-.episode-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.episode-card h3 {
-  color: #007bff;
-}
 
 p {
   font-size: 14px;
@@ -60,9 +52,21 @@ p {
 
 footer {
   margin-top: 20px;
-  background-color: #007bff;
-  color: white;
+
   text-align: center;
   padding: 10px;
   font-size: 14px;
+}
+
+/* New styles for loading and errors */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.error {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
 }
