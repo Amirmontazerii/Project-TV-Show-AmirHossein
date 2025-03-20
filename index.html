@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show Project | AmirhosseinAminian (AmirhosseinAminian)</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TV Show Project | Amirhossein Aminian</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-</head>
+  <body>
+    <header>
+      <h1>TV Show Episodes</h1>
 
-<body>
-  <header>
-    <h1>Game of Thrones Episodes</h1>
-    <input type="text" id="searchBar" placeholder="Search episodes..." />
-    <select id="episodeSelector">
-      <option value="all">Show All Episodes</option>
-    </select>
-    <p id="episodeCount"></p>
-  </header>
+      <select id="showSelector"></select>
 
-  <div id="root"></div>
+      <input type="text" id="searchBar" placeholder="Search episodes..." />
+
+      <select id="episodeSelector">
+        <option value="all">Show All Episodes</option>
+      </select>
+    </header>
+
+    <div id="root"></div>
+
+    <!-- Loads YOUR javascript code -->
+    <script src="script.js"></script>
+  </body>
 
   <footer>
     <p>
@@ -27,8 +33,4 @@
       <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
     </p>
   </footer>
-
-  <script src="script.js"></script>
-</body>
-
 </html>
