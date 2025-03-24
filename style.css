@@ -16,16 +16,17 @@ h1 {
 #showSearch,
 #episodeSearch,
 #showSelector,
+#backToShows,
 #episodeSelector {
   width: 30%;
-  max-width: 100px;
+  max-width: 400px;
+  height: 50px;
   padding: 10px;
   margin: 10px auto;
   border: 3px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
 }
 
 #root {
@@ -72,19 +73,6 @@ footer {
   background-color: white;
 }
 
-/* New styles for navigation button */
-#backToShows {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
 #backToShows:hover {
   background-color: #0056b3;
