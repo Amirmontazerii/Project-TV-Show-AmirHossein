@@ -22,6 +22,44 @@ nav {
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Make the controls align in one line */
+#episodeControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Adds spacing between elements */
+  padding: 10px;
+  flex-wrap: wrap;
+  /* Ensures responsiveness on small screens */
+}
+
+/* Style for search bar, dropdown, and button */
+#episodeSearch,
+#episodeSelector,
+#backToShows {
+  width: 200px;
+  /* Uniform width */
+  height: 40px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#backToShows {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#backToShows:hover {
+  background-color: #0056b3;
+}
 
 nav input,
 #backToShows {
