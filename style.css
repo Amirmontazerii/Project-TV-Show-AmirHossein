@@ -12,15 +12,20 @@ h1 {
   color: black;
 }
 
-#searchBar, #showSelector, #episodeSelector {
+#searchBar,
+#showSearch,
+#episodeSearch,
+#showSelector,
+#episodeSelector {
   width: 30%;
-  max-width: 600px;
+  max-width: 100px;
   padding: 10px;
   margin: 10px auto;
   border: 3px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
   box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 
 #root {
@@ -31,6 +36,7 @@ h1 {
   padding: 20px;
 }
 
+.show-card,
 .episode-card {
   background-color: white;
   border: 1px solid #ddd;
@@ -38,13 +44,21 @@ h1 {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   padding: 15px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
+.show-card:hover,
 .episode-card:hover {
   transform: scale(1.05);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.show-card img,
+.episode-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
 
 p {
   font-size: 14px;
@@ -54,8 +68,26 @@ footer {
   margin-top: 20px;
   text-align: center;
   padding: 10px;
-  font-size: 24px;
+  font-size: 16px;
   background-color: white;
+}
+
+/* New styles for navigation button */
+#backToShows {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#backToShows:hover {
+  background-color: #0056b3;
 }
 
 /* New styles for loading and errors */
