@@ -2,32 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TV Show Project | Amirhossein Aminian</title>
-  <link href="style.css" rel="stylesheet" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Show Explorer | Amirhossein Aminian</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <h1>TV Show Explorer</h1>
+    <nav>
+      <input type="text" id="globalShowSearch" placeholder="Search all shows...">
+      <button id="backToShows" style="display: none;">Back to Shows</button>
+    </nav>
   </header>
-
-  <nav>
-    <button id="backToShows" style="display: none;">Back to Shows</button>
-  </nav>
 
   <div id="root"></div>
 
-  <!-- Loads YOUR javascript code -->
+  <footer>
+    <p>Data sourced from <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a></p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
-<footer>
-  <p>
-    Data sourced from
-    <a href="https://www.tvmaze.com/" target="_blank">TVMaze.com</a>
-  </p>
-</footer>
 
 </html>
